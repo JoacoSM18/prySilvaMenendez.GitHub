@@ -30,6 +30,8 @@
         {
             btnUno = new Button();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnUno
@@ -50,15 +52,27 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.images;
+            pictureBox1.Location = new Point(144, 259);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(269, 136);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // frmGitHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(btnUno);
             Name = "frmGitHub";
             Text = "Registro En GitHub de Mi Proyecto";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -66,5 +80,6 @@
 
         private Button btnUno;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }
