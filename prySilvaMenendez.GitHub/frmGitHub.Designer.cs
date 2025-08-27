@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnUno = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btnUno
@@ -40,11 +41,21 @@
             btnUno.Text = "Boton Uno";
             btnUno.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(154, 177);
+            button1.Name = "button1";
+            button1.Size = new Size(223, 39);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // frmGitHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(btnUno);
             Name = "frmGitHub";
             Text = "Registro En GitHub de Mi Proyecto";
@@ -54,5 +65,6 @@
         #endregion
 
         private Button btnUno;
+        private Button button1;
     }
 }
